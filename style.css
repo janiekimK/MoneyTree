@@ -19,6 +19,7 @@ body {
 .container2 {
   display: flex;
 }
+
 .container .container0 .container1 .container2 {
   flex-direction: column;
 }
@@ -42,11 +43,9 @@ body {
 
 .sidebar ul li a {
   color: #ffffff;
-  /* Hover effect */
-  transition: color 0.3s ease;
 }
 
-.sidebar ul li a:hover {
+.sidebar ul li {
   color: #70aac6;
 }
 
@@ -55,8 +54,7 @@ body {
   padding: 20px;
 }
 
-h1,
-h3 {
+h1,h3 {
   color: #70aac6;
 }
 
@@ -64,8 +62,7 @@ p {
   color: #000000;
 }
 
-.header,
-.footer {
+.header {
   background-color: #e8ffde;
   padding: 20px;
   color: #000000;
@@ -73,8 +70,10 @@ p {
 }
 
 .footer {
-  margin-top: 20px;
-  font-size: 14px;
+  background-color: #e8ffde;
+  padding: 10px;
+  color: #000000;
+  text-align: center;
 }
 
 .main {
@@ -85,11 +84,10 @@ p {
 
 .form{
   display: flex;
-  justify-content: center;
   width: 100%;
 }
 
-/* Responsive styles for smaller devices */
+
 @media screen and (max-width: 768px) {
   .container {
     flex-direction: column;
