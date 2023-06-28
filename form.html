@@ -1,78 +1,59 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Eingabeformular</title>
-    <link rel="stylesheet" href="style.css" />
-  </head>
-  <body>
-    <form action="mailto:janie.kabashi@bbzbl-it.ch" method="post">
-      <div>
-        <label>Anrede *</label><br />
-        <input
-          type="radio"
-          name="anrede"
-          id="frau"
-          value="Frau"
-          required
-          checked="checked"
-        />
-        <label for="frau">Frau</label>
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Eingabeformular</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <form action="mailto:janie.kabashi@bbzbl-it.ch" method="post">
+    <h2>Newsletter Abonnement</h2>
 
-        <input type="radio" name="anrede" id="herr" value="Herr" />
-        <label for="herr">Herr</label>
+    <div>
+      <label for="anrede">Anrede *</label><br/>
+      <input type="radio" name="anrede" id="frau" value="Frau" required checked="checked" />
+      <label for="frau">Frau</label>
 
-        <label for="vorname">Vorname *</label><br />
+      <input type="radio" name="anrede" id="herr" value="Herr" />
+      <label for="herr">Herr</label>
+    </div>
 
-        <input
-          type="text"
-          id="vorname"
-          name="vorname"
-          minlength="1"
-          maxlength="100"
-          required
-        />
+    <div>
+      <label for="vorname">Vorname *</label><br />
+      <input type="text" id="vorname" name="vorname" minlength="1" maxlength="100" required />
+    </div>
 
-        <label for="nachname">Nachname *</label><br />
+    <div>
+      <label for="nachname">Nachname *</label><br />
+      <input type="text" id="nachname" name="nachname" minlength="1" maxlength="30" required />
+    </div>
 
-        <input
-          type="text"
-          id="nachname"
-          name="nachname"
-          minlength="1"
-          maxlength="30"
-          required
-        />
+    <div>
+      <label for="strasse">Strasse *</label><br />
+      <input type="text" id="strasse" name="strasse" required />
+    </div>
 
-        <label for="strasse">Strasse *</label><br />
+    <div>
+      <label for="plz">PLZ *</label><br />
+      <input type="number" id="plz" name="plz" minlength="1000" maxlength="9999" required />
+    </div>
 
-        <input type="text" id="strasse" name="strasse" required />
+    <div>
+      <label for="ort">Ort *</label><br />
+      <input type="text" id="ort" name="ort" required />
+    </div>
 
-        <label for="plz">PLZ *</label><br />
+    <div>
+      <label for="email">Emailadresse *</label><br />
+      <input type="email" id="email" name="email" required />
+    </div>
 
-        <input
-          type="number"
-          id="plz"
-          name="plz"
-          minlength="1000"
-          maxlength="9999"
-          required
-        />
-
-        <label for="ort">Ort *</label><br />
-
-        <input type="text" id="ort" name="ort" required />
-
-        <label for="email">Emailadresse *</label><br />
-
-        <input type="email" id="email" name="email" required />
-
-        <input type="submit" value="Abonnieren" />
-
-        <input type="reset" value="Löschen" />
-      </div>
-    </form>
-  </body>
+    <div>
+      <input type="submit" value="Abonnieren" />
+      <input type="reset" value="Löschen" />
+    </div>
+  </form>
+</body>
 </html>
