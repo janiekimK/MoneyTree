@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Eingabeformular</title>
+    </head>
+    <body>
+        <form action="https://gibm.becknet.ch/formular/formular.php" method="post">
+
+            <div>
+
+                <label>Anrede *</label><br>
+
+                <input type="radio"
+                    name="anrede"
+                    id="frau"
+                    value="Frau"
+                    required checked="checked">
+                <label for="frau">Frau</label>
+
+                <input type="radio"
+                    name="anrede"
+                    id="herr"
+                    value="Herr">
+                <label for="herr">Herr</label>
+
+                <input type="radio"
+                    name="anrede"
+                    id="anderes"
+                    value="Anderes">
+                <label for="anderes">Anderes</label>
+
+            </div>
+
+            <div>
+
+                <label for="vorname">Vorname *</label><br>
+
+                <input type="text"
+                    id="vorname"
+                    name="vorname"
+                    minlength="1"
+                    maxlength="100"
+                    required>
+
+            </div>
+
+            <div>
+
+                <label for="nachname">Nachname *</label><br>
+
+                <input type="text" id="nachname" name="nachname" minlength="1"
+                    maxlength="30" required>
+
+            </div>
+
+            <div>
+
+                <label for="strasse">Strasse *</label><br>
+
+                <input type="text" id="strasse" name="strasse" required>
+
+            </div>
+
+            <div>
+
+                <label for="plz">PLZ *</label><br>
+
+                <input type="number" id="plz" name="plz" minlength="1000"
+                    maxlength="9999" required>
+
+            </div>
+
+            <div>
+
+                <label for="ort">Ort *</label><br>
+
+                <input type="text" id="ort" name="ort" required>
+
+            </div>
+
+            <div>
+
+                <label for="email">Email *</label><br>
+
+                <input type="email" id="email" name="email" required>
+
+            </div>
+
+            <div>
+
+                <label for="nachricht">Nachricht</label><br>
+
+                <textarea name="nachricht" id="nachricht" cols="30" rows="10"></textarea>
+            </div>
+
+            <div>
+
+                <input type="submit" value="Senden">
+
+                <input type="reset" value="Löschen">
+
+            </div>
+
+        </form>
+    </body>
+</html>
