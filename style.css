@@ -4,6 +4,20 @@ body {
   padding: 0;
 }
 
+#about img {
+  float: right;
+  display: flex;
+    padding: 0px;
+    margin: 0px 0px 300px 10px;
+}
+
+img {
+  float: right;
+  display: flex;
+    padding: 0px;
+    margin: 0px 0px 300px 10px;
+}
+
 .container {
   display: flex;
 }
@@ -54,7 +68,12 @@ body {
   padding: 20px;
 }
 
-h1,h3 {
+h1 {
+  font-size: 40px;
+  color: #70aac6;
+}
+
+h3 {
   color: #70aac6;
 }
 
@@ -85,6 +104,11 @@ p {
 .form{
   display: flex;
   width: 100%;
+}
+
+a:hover {
+  color: black;
+  background-color: #e8ffde;
 }
 
 
