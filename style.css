@@ -11,6 +11,7 @@ body {
     margin: 0px 0px 300px 10px;
 }
 
+
 img {
   float: right;
   display: flex;
@@ -106,9 +107,13 @@ p {
   width: 100%;
 }
 
+a{
+  text-decoration: none;
+}
+
 a:hover {
   color: black;
-  background-color: #e8ffde;
+  background-color: black;
 }
 
 
